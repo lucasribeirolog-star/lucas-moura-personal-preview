@@ -17,11 +17,11 @@
     --sand-deep: #E9B300;
     --sand-card: #FFFDF6;
     --beige: #F5C531;
-    --ink: #1B2A26;
-    --ink-soft: #5C6E68;
+    --ink: #14284D;
+    --ink-soft: #3E5C8A;
     --white: #FFFFFF;
-    --line: rgba(27,42,38,0.12);
-    --shadow: 0 24px 48px rgba(12,139,125,0.16);
+    --line: rgba(20,40,77,0.14);
+    --shadow: 0 24px 48px rgba(20,40,77,0.16);
     --radius: 20px;
     --ff-display: "Fraunces", "Iowan Old Style", "Georgia", serif;
     --ff-body: "Work Sans", "Segoe UI", sans-serif;
@@ -29,7 +29,7 @@
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; font-size: 118%; }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
@@ -133,18 +133,18 @@
   .hero-eyebrow { color: #C4470F; }
   .hero-eyebrow::before { background: #C4470F; }
   .hero-band h1 {
-    font-size: clamp(2rem, 4.2vw, 3.1rem); color: #1B2A26; margin-top: 0.8rem; max-width: 20ch;
+    font-size: clamp(2.1rem, 4.2vw, 3.2rem); color: var(--ink); margin-top: 0.8rem; max-width: 20ch;
   }
   .hero-band p.lede {
-    color: #5C4A32; font-size: 1.05rem; max-width: 50ch; margin-top: 1.1rem; line-height: 1.65;
+    color: var(--ink-soft); font-size: 1.15rem; max-width: 50ch; margin-top: 1.1rem; line-height: 1.65;
   }
-  .hero-band .btn-ghost { background: transparent; border-color: rgba(27,42,38,0.3); color: #1B2A26; }
-  .hero-band .btn-ghost:hover { background: #1B2A26; color: var(--beige); border-color: #1B2A26; }
+  .hero-band .btn-ghost { background: transparent; border-color: rgba(20,40,77,0.3); color: var(--ink); }
+  .hero-band .btn-ghost:hover { background: var(--ink); color: var(--beige); border-color: var(--ink); }
   .hero-ctas { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin-top: 2rem; }
-  .hero-note { font-family: var(--ff-mono); font-size: 0.68rem; color: #6B5A3F; margin-top: 0.7rem; letter-spacing: 0.02em; }
+  .hero-note { font-family: var(--ff-mono); font-size: 0.72rem; color: var(--ink-soft); margin-top: 0.7rem; letter-spacing: 0.02em; }
   .hero-stats { display: flex; gap: 2.4rem; margin-top: 2.6rem; flex-wrap: wrap; }
-  .stat-num { font-family: var(--ff-mono); font-size: 1.5rem; color: #1B2A26; font-weight: 500; font-variant-numeric: tabular-nums; }
-  .stat-label { font-size: 0.78rem; color: #6B5A3F; margin-top: 0.15rem; }
+  .stat-num { font-family: var(--ff-mono); font-size: 1.6rem; color: var(--ink); font-weight: 500; font-variant-numeric: tabular-nums; }
+  .stat-label { font-size: 0.85rem; color: var(--ink-soft); margin-top: 0.15rem; }
 
   /* Section scaffolding */
   section { padding: 6.5rem 0; position: relative; }
